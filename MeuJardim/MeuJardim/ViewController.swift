@@ -80,7 +80,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(profileImageView)
         view.addSubview(descriptionTextView)
-        
+        view.backgroundColor = .white
         setupBottomControls()
         setupLayout()
     }
