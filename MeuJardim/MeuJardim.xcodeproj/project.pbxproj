@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A067DA624911749000E9D71 /* PlantRegistrationManual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */; };
+		1A89392E2492726900131FFD /* PlantRMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A067DA724911B11000E9D71 /* PlantRMController.swift */; };
+		1A89392F2492726E00131FFD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A89392C2492683600131FFD /* ImagePicker.swift */; };
 		D506D53024925FCD0027AB23 /* Initial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D506D52F24925FCD0027AB23 /* Initial.swift */; };
 		D506D53224925FFD0027AB23 /* InitialView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D506D53124925FFD0027AB23 /* InitialView.storyboard */; };
 		D506D536249269FF0027AB23 /* InitialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D506D535249269FF0027AB23 /* InitialCell.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantRegistrationManual.storyboard; sourceTree = SOURCE_ROOT; };
+		1A067DA724911B11000E9D71 /* PlantRMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRMController.swift; sourceTree = SOURCE_ROOT; };
+		1A89392C2492683600131FFD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = SOURCE_ROOT; };
 		D506D52F24925FCD0027AB23 /* Initial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Initial.swift; path = MeuJardim/Initial.swift; sourceTree = SOURCE_ROOT; };
 		D506D53124925FFD0027AB23 /* InitialView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = InitialView.storyboard; path = MeuJardim/InitialView.storyboard; sourceTree = SOURCE_ROOT; };
 		D506D535249269FF0027AB23 /* InitialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialCell.swift; path = MeuJardim/InitialCell.swift; sourceTree = SOURCE_ROOT; };
@@ -108,6 +114,7 @@
 		D595A67C249107D900846139 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +122,8 @@
 		D595A67D249107DF00846139 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1A067DA724911B11000E9D71 /* PlantRMController.swift */,
+				1A89392C2492683600131FFD /* ImagePicker.swift */,
 				D506D52F24925FCD0027AB23 /* Initial.swift */,
 				D506D535249269FF0027AB23 /* InitialCell.swift */,
 			);
@@ -211,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D595A667249107D300846139 /* LaunchScreen.storyboard in Resources */,
+				1A067DA624911749000E9D71 /* PlantRegistrationManual.storyboard in Resources */,
 				D595A664249107D300846139 /* Assets.xcassets in Resources */,
 				D506D53224925FFD0027AB23 /* InitialView.storyboard in Resources */,
 			);
@@ -230,6 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A89392F2492726E00131FFD /* ImagePicker.swift in Sources */,
+				1A89392E2492726900131FFD /* PlantRMController.swift in Sources */,
 				D506D536249269FF0027AB23 /* InitialCell.swift in Sources */,
 				D595A65F249107D200846139 /* ViewController.swift in Sources */,
 				D595A65B249107D200846139 /* AppDelegate.swift in Sources */,
