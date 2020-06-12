@@ -21,14 +21,20 @@ class PlantRMController: UIViewController{
     var imagePicker:ImagePicker!
     
     override func viewDidLoad() {
-          super.viewDidLoad()
-          self.imagePicker = ImagePicker(presentationController: self, delegate: self)
+        super.viewDidLoad()
+        self.imagePicker = ImagePicker(presentationController: self, delegate: self)
+        navigationItem.rightBarButtonItem =
+            UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveTapped))
           
       }
     
     @IBAction func showImagePicker(_ sender: UIButton) {
         
         self.imagePicker.present(from: sender)
+    }
+    
+    @objc func saveTapped(_sender: UINavigationItem){
+        print("Saved")
     }
     
 }
