@@ -88,9 +88,9 @@ class Initial: UITableViewController {
     
     // when user taps the plus button he will be redirect to another screen
     @objc func addTapped(_sender: UINavigationItem){
-        //        let storyboard = UIStoryboard(name: "next", bundle: nil)
-        //         let vc = storyboard.instantiateViewController(withIdentifier: "nextCont") as UIViewController
-        //        self.navigationController?.pushViewController(vc, animated: true)
+        let storyboard = UIStoryboard(name: "NewPlantView", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "NewPlant") as UIViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     // search for the inserted text in the textfield of searchBar and reload tableview data showing the results
