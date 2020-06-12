@@ -213,8 +213,6 @@
 				D595A667249107D300846139 /* LaunchScreen.storyboard in Resources */,
 				D595A664249107D300846139 /* Assets.xcassets in Resources */,
 				D506D53224925FFD0027AB23 /* InitialView.storyboard in Resources */,
-				D595A662249107D200846139 /* Main.storyboard in Resources */,
-b3c3bbfdc8b34d4a0271e9c2caba57749ea2c600
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
