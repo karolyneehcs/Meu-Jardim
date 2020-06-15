@@ -25,8 +25,15 @@ class PlantRMController: UIViewController{
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         navigationItem.rightBarButtonItem =
             UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveTapped))
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationItem.title = "Cadastrar nova planta"
           
       }
+    
+    override func willMove(toParent parent: UIViewController?) {
+           navigationItem.largeTitleDisplayMode = .always
+           navigationController?.navigationBar.prefersLargeTitles = true
+       }
     
     @IBAction func showImagePicker(_ sender: UIButton) {
         

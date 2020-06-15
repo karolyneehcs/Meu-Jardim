@@ -88,8 +88,8 @@ class Initial: UITableViewController {
     
     // when user taps the plus button he will be redirect to another screen
     @objc func addTapped(_sender: UINavigationItem){
-        let storyboard = UIStoryboard(name: "NewPlantView", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "NewPlant") as UIViewController
+        let storyboard = UIStoryboard(name: "PlantRegistrationManual", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ManualNewPlant") as UIViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
