@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20A38CFC24926F2F001510A8 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38CFB24926F2F001510A8 /* SwipingController.swift */; };
+		20A38CFE2492AA37001510A8 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38CFD2492AA37001510A8 /* PageCell.swift */; };
+		20A38D002492BE0E001510A8 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38CFF2492BE0E001510A8 /* Page.swift */; };
+		20A38D02249561C7001510A8 /* SwippingController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38D01249561C7001510A8 /* SwippingController+extension.swift */; };
+		20A38D04249562BB001510A8 /* SwippingController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38D03249562BB001510A8 /* SwippingController+UICollectionView.swift */; };
 		D595A65B249107D200846139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A65A249107D200846139 /* AppDelegate.swift */; };
 		D595A65D249107D200846139 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A65C249107D200846139 /* SceneDelegate.swift */; };
 		D595A65F249107D200846139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A65E249107D200846139 /* ViewController.swift */; };
@@ -26,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20A38CFB24926F2F001510A8 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
+		20A38CFD2492AA37001510A8 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		20A38CFF2492BE0E001510A8 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		20A38D01249561C7001510A8 /* SwippingController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwippingController+extension.swift"; sourceTree = "<group>"; };
+		20A38D03249562BB001510A8 /* SwippingController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwippingController+UICollectionView.swift"; sourceTree = "<group>"; };
 		D595A657249107D200846139 /* MeuJardim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeuJardim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D595A65A249107D200846139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D595A65C249107D200846139 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,8 +94,13 @@
 				D595A65C249107D200846139 /* SceneDelegate.swift */,
 				D595A65E249107D200846139 /* ViewController.swift */,
 				D595A663249107D300846139 /* Assets.xcassets */,
+				20A38CFB24926F2F001510A8 /* SwipingController.swift */,
 				D595A665249107D300846139 /* LaunchScreen.storyboard */,
 				D595A668249107D300846139 /* Info.plist */,
+				20A38CFD2492AA37001510A8 /* PageCell.swift */,
+				20A38CFF2492BE0E001510A8 /* Page.swift */,
+				20A38D01249561C7001510A8 /* SwippingController+extension.swift */,
+				20A38D03249562BB001510A8 /* SwippingController+UICollectionView.swift */,
 			);
 			path = MeuJardim;
 			sourceTree = "<group>";
@@ -221,8 +236,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D595A65F249107D200846139 /* ViewController.swift in Sources */,
+				20A38D04249562BB001510A8 /* SwippingController+UICollectionView.swift in Sources */,
+				20A38D02249561C7001510A8 /* SwippingController+extension.swift in Sources */,
+				20A38CFE2492AA37001510A8 /* PageCell.swift in Sources */,
+				20A38D002492BE0E001510A8 /* Page.swift in Sources */,
 				D595A65B249107D200846139 /* AppDelegate.swift in Sources */,
 				D595A65D249107D200846139 /* SceneDelegate.swift in Sources */,
+				20A38CFC24926F2F001510A8 /* SwipingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
