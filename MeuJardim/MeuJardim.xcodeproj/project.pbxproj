@@ -66,6 +66,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2033ABF82498F00E00D38DB8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				20A38CFD2492AA37001510A8 /* PageCell.swift */,
+				20A38CFB24926F2F001510A8 /* SwipingController.swift */,
+				20A38CFF2492BE0E001510A8 /* Page.swift */,
+				20A38D01249561C7001510A8 /* SwippingController+extension.swift */,
+				20A38D03249562BB001510A8 /* SwippingController+UICollectionView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		D595A64E249107D200846139 = {
 			isa = PBXGroup;
 			children = (
@@ -94,13 +106,9 @@
 				D595A65C249107D200846139 /* SceneDelegate.swift */,
 				D595A65E249107D200846139 /* ViewController.swift */,
 				D595A663249107D300846139 /* Assets.xcassets */,
-				20A38CFB24926F2F001510A8 /* SwipingController.swift */,
 				D595A665249107D300846139 /* LaunchScreen.storyboard */,
 				D595A668249107D300846139 /* Info.plist */,
-				20A38CFD2492AA37001510A8 /* PageCell.swift */,
-				20A38CFF2492BE0E001510A8 /* Page.swift */,
-				20A38D01249561C7001510A8 /* SwippingController+extension.swift */,
-				20A38D03249562BB001510A8 /* SwippingController+UICollectionView.swift */,
+				2033ABF82498F00E00D38DB8 /* Onboarding */,
 			);
 			path = MeuJardim;
 			sourceTree = "<group>";
