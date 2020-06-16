@@ -55,9 +55,16 @@ class SwippingController: UICollectionViewController, UICollectionViewDelegateFl
         
         let nextIndex = min(pageControl.currentPage + 1, pages.count - 1)
         
-        let indexPath = IndexPath(item: nextIndex, section: 0)
-        pageControl.currentPage = nextIndex
-        collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        if pageControl.currentPage == pages.count-1{
+            let storyboard = UIStoryboard(name: "InitialView", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "InitialView") as UIViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else{
+            let indexPath = IndexPath(item: nextIndex, section: 0)
+            pageControl.currentPage = nextIndex
+            collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        }
+        
     }
     
     lazy var pageControl: UIPageControl = {
@@ -112,6 +119,15 @@ class SwippingController: UICollectionViewController, UICollectionViewDelegateFl
         
         
         setupBottomControls()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     
