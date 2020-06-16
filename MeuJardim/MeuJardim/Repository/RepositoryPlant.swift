@@ -7,3 +7,7 @@
 //
 
 import Foundation
+class PlantRepository: RepositoryMethods {
+    typealias Item = Plant
+    var items: [Plant] = []
+}
