@@ -121,6 +121,7 @@ extension Initial: UISearchResultsUpdating {
 
 private extension Initial{
     private func navBarApearence(){
+        navigationItem.hidesBackButton = true 
         navigationController?.navigationBar.prefersLargeTitles = true
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.backgroundColor = #colorLiteral(red: 0.8117647059, green: 0.937254902, blue: 0.6784313725, alpha: 1)
