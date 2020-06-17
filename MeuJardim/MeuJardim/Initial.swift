@@ -17,12 +17,16 @@ class Initial: UITableViewController {
         setSearchBar()
     }
     
-    // MARK: - Table view data source
+    // MARK: - Setting variables
     
     let searchController = UISearchController(searchResultsController: nil)
-    var filteredFruits: [String] = []
+    
+    private var plantRepository: PlantRepository {
+        PlantRepository()
+    }
+    var filteredPlants: [Plant] = []
+    var plants: [Plant] = []
     let cellIdentifier = "CellIdentifier"
-    var fruits = ["Apple", "Pineapple", "Orange", "Blackberry", "Banana", "Pear", "Kiwi", "Strawberry", "Mango", "Walnut", "Apricot", "Tomato", "Almond", "Date", "Melon", "Water Melon", "Lemon", "Coconut", "Fig", "Passionfruit", "Star Fruit", "Clementin", "Citron", "Cherry", "Cranberry"]
     
     var isSearchBarEmpty: Bool {
         return searchController.searchBar.text?.isEmpty ?? true
@@ -31,13 +35,14 @@ class Initial: UITableViewController {
     var isFiltering: Bool {
         return searchController.isActive && !isSearchBarEmpty
     }
-    
-    //define the number of sections
+ 
+    //MARK: - Table View Datasource
+    //MARK: - Define the number of sections
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    // blocks delete action if the user is searching
+    //MARK: - Blocks delete action if the user is searching
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         if isFiltering {
             return UITableViewCell.EditingStyle.none
@@ -46,12 +51,14 @@ class Initial: UITableViewController {
         }
     }
     
-    // swipe to delete
+    //MARK: - Swipe to delete
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
             tableView.beginUpdates()
-            fruits.remove(at: indexPath.row)
+            plantRepository.delete(id: plants[indexPath.row].id)
+            plants.remove(at: indexPath.row)
+            plants = plantRepository.readAllItems()
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
             
@@ -61,47 +68,56 @@ class Initial: UITableViewController {
         
     }
     
-    // return the number of filtered results to fill the table view
+    //MARK: - Return the number of plants to fill the table view
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering {
-            return filteredFruits.count
+            return filteredPlants.count
         }
-        
-        return fruits.count
+        return plantRepository.readAllItems().count
     }
     
-    // shows the full table view or the search results if user is searching
+    //MARK: - Shows the full table view or the search results if user is searching
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! InitialCell
         
-        var fruit : String
+        plants = plantRepository.readAllItems()
+        var plant: Plant
         if isFiltering {
-            fruit = filteredFruits[indexPath.row]
+            plant = filteredPlants[indexPath.row]
         } else {
-            fruit = fruits[indexPath.row]
+            plant = plants[indexPath.row]
         }
         
-        cell.plantImage.image = UIImage(named: "lettucee")
-        cell.plantName.text = fruit
+        cell.plantName.text = plant.popularName
         return cell
     }
     
-    // when user taps the plus button he will be redirect to another screen
+    //MARK: - Update table view
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           // Calling the repository to read all notes
+           plants = plantRepository.readAllItems()
+           tableView.reloadData()
+       }
+    
+    //MARK: - When user taps the plus button he will be redirect to another screen
     @objc func addTapped(_sender: UINavigationItem){
         let storyboard = UIStoryboard(name: "PlantRegistrationManual", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "ManualNewPlant") as UIViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    // search for the inserted text in the textfield of searchBar and reload tableview data showing the results
+    //MARK: - Search for the inserted text in searchBar and reload tableview data showing the results
     func filterContentForSearchText(_ searchText: String) {
-        filteredFruits = fruits.filter { fruit -> Bool in
-            return fruit.lowercased().contains(searchText.lowercased())
+        plants = plantRepository.readAllItems()
+        filteredPlants = plants.filter { plant -> Bool in
+            return (plant.popularName?.lowercased().contains(searchText.lowercased()))!
         }
+        
         tableView.reloadData()
     }
     
-    // when user selects a row he will be redirected to another screen
+    //MARK: - When user selects a row he will be redirected to another screen
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //        let storyboard = UIStoryboard(name: "next", bundle: nil)
         //         let vc = storyboard.instantiateViewController(withIdentifier: "nextCont") as UIViewController
