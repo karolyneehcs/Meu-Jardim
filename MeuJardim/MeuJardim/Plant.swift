@@ -13,14 +13,14 @@ class Plant: RepositoryItem{
     var id: UUID
     var popularName: String?
     var scientificName: String?
-    var photo: URL?
+    var photo: String?
     var information: String?
     
     required init() {
         self.id = UUID()
-        self.popularName = nil
-        self.scientificName = nil
-        self.photo = nil
-        self.information = nil
+        self.popularName = ""
+        self.scientificName = ""
+        self.photo = ""
+        self.information = ""
     }
 }
