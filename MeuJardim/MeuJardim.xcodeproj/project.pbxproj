@@ -30,6 +30,7 @@
 		D5C234A0249972740052C197 /* RepositoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C2349F249972740052C197 /* RepositoryItem.swift */; };
 		D5C234A22499728A0052C197 /* RepositoryPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C234A12499728A0052C197 /* RepositoryPlant.swift */; };
 		D5C234A4249972AA0052C197 /* RepositoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C234A3249972AA0052C197 /* RepositoryMethods.swift */; };
+		D5C234A7249974290052C197 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C234A6249974290052C197 /* FileHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		D5C2349F249972740052C197 /* RepositoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryItem.swift; sourceTree = "<group>"; };
 		D5C234A12499728A0052C197 /* RepositoryPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPlant.swift; sourceTree = "<group>"; };
 		D5C234A3249972AA0052C197 /* RepositoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryMethods.swift; sourceTree = "<group>"; };
+		D5C234A6249974290052C197 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		D595A659249107D200846139 /* MeuJardim */ = {
 			isa = PBXGroup;
 			children = (
+				D5C234A52499740B0052C197 /* FileHelper */,
 				D5C2349E249971FB0052C197 /* Repository */,
 				D595A67E249107E700846139 /* View */,
 				D595A67D249107DF00846139 /* Controller */,
@@ -185,6 +188,14 @@
 				D5C234A3249972AA0052C197 /* RepositoryMethods.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		D5C234A52499740B0052C197 /* FileHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D5C234A6249974290052C197 /* FileHelper.swift */,
+			);
+			path = FileHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 				1A89392E2492726900131FFD /* PlantRMController.swift in Sources */,
 				D506D536249269FF0027AB23 /* InitialCell.swift in Sources */,
 				D595A65F249107D200846139 /* ViewController.swift in Sources */,
+				D5C234A7249974290052C197 /* FileHelper.swift in Sources */,
 				20A38D04249562BB001510A8 /* SwippingController+UICollectionView.swift in Sources */,
 				20A38D02249561C7001510A8 /* SwippingController+extension.swift in Sources */,
 				D5C234A0249972740052C197 /* RepositoryItem.swift in Sources */,
