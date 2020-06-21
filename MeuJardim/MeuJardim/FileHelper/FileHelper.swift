@@ -47,7 +47,6 @@ struct FileHelper {
         createDirectory(with: directoryNamed)
         let list = path.pathComponents
         let newPath = constructPath(named: directoryNamed + "/" + list[list.count - 1])
-        print(newPath)
         do{
             try FileManager.default.moveItem(at: path,
                                              to: newPath )
