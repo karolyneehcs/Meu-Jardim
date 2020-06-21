@@ -82,12 +82,16 @@ class Initial: UITableViewController {
         
         plants = plantRepository.readAllItems()
         var plant: Plant
+        
+        // if user is searching table view will show the results of search
         if isFiltering {
             plant = filteredPlants[indexPath.row]
         } else {
             plant = plants[indexPath.row]
         }
         
+        let imagePath = FileHelper().constructPath(named: "photos/" + (plant.photo ?? ""))
+        cell.plantImage.image = UIImage(contentsOfFile: imagePath.relativePath)
         cell.plantName.text = plant.popularName
         return cell
     }
