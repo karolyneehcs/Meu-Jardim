@@ -13,6 +13,7 @@ struct FileHelper {
     let mainPath  = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     
     //MARK: - Create a new directory on the documents by default, or on the choosen path
+    
     func createDirectory(with name: String, at path: String? = nil) {
         let contentPath = constructPath(named: name, from: path)
         if !directoryExists(with: name, at: path) {
@@ -41,6 +42,33 @@ struct FileHelper {
         return manager.fileExists(atPath: dirPath.path, isDirectory: &isDirectory) && isDirectory.boolValue
         
     }
+    //MARK: - Move file to another directory
+    func moveFileNewDirectory(at path: URL, directoryNamed: String){
+        createDirectory(with: directoryNamed)
+        let list = path.pathComponents
+        let newPath = constructPath(named: directoryNamed + "/" + list[list.count - 1])
+        print(newPath)
+        do{
+            try FileManager.default.moveItem(at: path,
+                                             to: newPath )
+        } catch{
+            print(error.localizedDescription)
+        }
+    }
+    
+    func removeAllFilesFromDirectory(directoryName: String){
+        let contents = contentsForDirectory(atPath: directoryName)
+        for content in contents{
+            let path = constructPath(named: directoryName + "/" + content)
+            do{
+                try manager.removeItem(at: path)
+            }catch{
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    
     //MARK: - Get the content of directory
     func contentsForDirectory(atPath path: String) -> [String] {
         let contentPath = constructPath(named: path)
