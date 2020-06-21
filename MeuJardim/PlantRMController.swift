@@ -30,7 +30,7 @@ class PlantRMController: UIViewController{
     override func willMove(toParent parent: UIViewController?) {
         navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+        FileHelper().removeAllFilesFromDirectory(directoryName: "tempPhotos")
     }
     
     @IBAction func showImagePicker(_ sender: UIButton) {
@@ -39,12 +39,23 @@ class PlantRMController: UIViewController{
     
     //MARK: - Saves the new plant in a file
     @objc func saveTapped(_sender: UINavigationItem){
+  
         let plantRepository = PlantRepository()
-        let plant : Plant = plantRepository.createNewItem() ?? Plant()
+        let plant = plantRepository.createNewItem() ?? Plant()
+        // get contents of tempPhoto which is a directory where the photo is
+        let contents = FileHelper().contentsForDirectory(atPath: "tempPhotos")
+        plant.photo = contents.first
         plant.popularName = popularPlantField.text
         plant.scientificName = scientificPlantField.text
         plantRepository.update(item: plant)
-        print(plantRepository.readAllItems())
+        
+        // move the choosen photo to a permanent directory
+        FileHelper().moveFileNewDirectory(at: FileHelper().constructPath(named: "tempPhotos" + "/" + (plant.photo ?? "")), directoryNamed: "photos")
+        
+        // go back to table previous screen
+        let storyboard = UIStoryboard(name: "InitialView", bundle: nil)
+        let nextView = storyboard.instantiateViewController(withIdentifier: "InitialView") as UIViewController
+        self.navigationController?.pushViewController(nextView, animated: true)
     }
     
     
