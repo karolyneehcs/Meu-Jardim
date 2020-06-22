@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00DF195E249BAEFE00BC60D2 /* TelaCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF195D249BAEFE00BC60D2 /* TelaCards.swift */; };
+		00DF197524A0A6DF00BC60D2 /* TelaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF197424A0A6DF00BC60D2 /* TelaInfo.swift */; };
 		1A067DA624911749000E9D71 /* PlantRegistrationManual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */; };
 		1A89392E2492726900131FFD /* PlantRMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A067DA724911B11000E9D71 /* PlantRMController.swift */; };
 		1A89392F2492726E00131FFD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A89392C2492683600131FFD /* ImagePicker.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		00DF195D249BAEFE00BC60D2 /* TelaCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCards.swift; sourceTree = SOURCE_ROOT; };
+		00DF197424A0A6DF00BC60D2 /* TelaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInfo.swift; sourceTree = SOURCE_ROOT; };
 		1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantRegistrationManual.storyboard; sourceTree = SOURCE_ROOT; };
 		1A067DA724911B11000E9D71 /* PlantRMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRMController.swift; sourceTree = SOURCE_ROOT; };
 		1A89392C2492683600131FFD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = SOURCE_ROOT; };
@@ -166,6 +168,7 @@
 				D506D53124925FFD0027AB23 /* InitialView.storyboard */,
 				D55D14FC2493B3DA00DF5EB8 /* NewPlantView.storyboard */,
 				00DF195D249BAEFE00BC60D2 /* TelaCards.swift */,
+				00DF197424A0A6DF00BC60D2 /* TelaInfo.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				20A38D02249561C7001510A8 /* SwippingController+extension.swift in Sources */,
 				20A38CFE2492AA37001510A8 /* PageCell.swift in Sources */,
 				20A38D002492BE0E001510A8 /* Page.swift in Sources */,
+				00DF197524A0A6DF00BC60D2 /* TelaInfo.swift in Sources */,
 				D595A65B249107D200846139 /* AppDelegate.swift in Sources */,
 				D506D53024925FCD0027AB23 /* Initial.swift in Sources */,
 				00DF195E249BAEFE00BC60D2 /* TelaCards.swift in Sources */,
