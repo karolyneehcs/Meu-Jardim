@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
          /*let navigationController = UINavigationController(rootViewController: ViewController())*/
        
-        let navigationController = UINavigationController(rootViewController: TelaCards())
+        let navigationController = UINavigationController(rootViewController: TelaInfo())
         
         /*let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
