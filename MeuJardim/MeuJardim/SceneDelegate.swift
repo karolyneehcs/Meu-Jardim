@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
+        
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -21,22 +21,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: winScene)
         
-        let navigationController = UINavigationController(rootViewController: ViewController())
+         /*let navigationController = UINavigationController(rootViewController: ViewController())*/
+       
+        let navigationController = UINavigationController(rootViewController: TelaCards())
         
-        let layout = UICollectionViewFlowLayout()
+        /*let layout = UICollectionViewFlowLayout()®
         layout.scrollDirection = .horizontal
         let swippingController = SwippingController(collectionViewLayout: layout)
         
-        navigationController.pushViewController(swippingController, animated: true)
+        navigationController.pushViewController(swippingController, animated: true)*/
         
         window?.rootViewController = navigationController
         
-        let isFirstLaunch = (UserDefaults.standard.value(forKey: "FirstLaunch") as? Bool) ?? false
+        /*let isFirstLaunch = (UserDefaults.standard.value(forKey: "FirstLaunch") as? Bool) ?? false
         if !isFirstLaunch {
             UserDefaults.standard.set(true, forKey: "FirstLaunch")
             UserDefaults.standard.set(Date().timeIntervalSince1970, forKey: "FirstLaunchTimestamp")
             window?.rootViewController = swippingController
-        }
+        }*/
         
         window?.makeKeyAndVisible()
         
