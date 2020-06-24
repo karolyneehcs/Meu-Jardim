@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A067DA624911749000E9D71 /* PlantRegistrationManual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */; };
+		1A89392E2492726900131FFD /* PlantRMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A067DA724911B11000E9D71 /* PlantRMController.swift */; };
+		1A89392F2492726E00131FFD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A89392C2492683600131FFD /* ImagePicker.swift */; };
+		2033AC4024A0E1CC00D38DB8 /* MeuJardimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033AC3F24A0E1CC00D38DB8 /* MeuJardimUITests.swift */; };
+		2033AC4C24A0E2AA00D38DB8 /* OnboardingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033AC4B24A0E2AA00D38DB8 /* OnboardingUITests.swift */; };
+		20A38CFC24926F2F001510A8 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38CFB24926F2F001510A8 /* SwipingController.swift */; };
+		20A38CFE2492AA37001510A8 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38CFD2492AA37001510A8 /* PageCell.swift */; };
+		20A38D002492BE0E001510A8 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38CFF2492BE0E001510A8 /* Page.swift */; };
+		20A38D02249561C7001510A8 /* SwippingController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38D01249561C7001510A8 /* SwippingController+extension.swift */; };
+		20A38D04249562BB001510A8 /* SwippingController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38D03249562BB001510A8 /* SwippingController+UICollectionView.swift */; };
+		D506D53024925FCD0027AB23 /* Initial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D506D52F24925FCD0027AB23 /* Initial.swift */; };
+		D506D53224925FFD0027AB23 /* InitialView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D506D53124925FFD0027AB23 /* InitialView.storyboard */; };
+		D506D536249269FF0027AB23 /* InitialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D506D535249269FF0027AB23 /* InitialCell.swift */; };
+		D55D14FD2493B3DA00DF5EB8 /* NewPlantView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55D14FC2493B3DA00DF5EB8 /* NewPlantView.storyboard */; };
+		D55D14FF2493B73400DF5EB8 /* NewPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D14FE2493B73400DF5EB8 /* NewPlant.swift */; };
 		D595A65B249107D200846139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A65A249107D200846139 /* AppDelegate.swift */; };
 		D595A65D249107D200846139 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A65C249107D200846139 /* SceneDelegate.swift */; };
 		D595A65F249107D200846139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A65E249107D200846139 /* ViewController.swift */; };
@@ -16,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2033AC4224A0E1CC00D38DB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D595A64F249107D200846139 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D595A656249107D200846139;
+			remoteInfo = MeuJardim;
+		};
 		D595A66E249107D300846139 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D595A64F249107D200846139 /* Project object */;
@@ -26,6 +48,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantRegistrationManual.storyboard; sourceTree = SOURCE_ROOT; };
+		1A067DA724911B11000E9D71 /* PlantRMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRMController.swift; sourceTree = SOURCE_ROOT; };
+		1A89392C2492683600131FFD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = SOURCE_ROOT; };
+		2033AC3D24A0E1CC00D38DB8 /* MeuJardimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuJardimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2033AC3F24A0E1CC00D38DB8 /* MeuJardimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuJardimUITests.swift; sourceTree = "<group>"; };
+		2033AC4124A0E1CC00D38DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2033AC4B24A0E2AA00D38DB8 /* OnboardingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUITests.swift; sourceTree = "<group>"; };
+		20A38CFB24926F2F001510A8 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
+		20A38CFD2492AA37001510A8 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		20A38CFF2492BE0E001510A8 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		20A38D01249561C7001510A8 /* SwippingController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwippingController+extension.swift"; sourceTree = "<group>"; };
+		20A38D03249562BB001510A8 /* SwippingController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwippingController+UICollectionView.swift"; sourceTree = "<group>"; };
+		D506D52F24925FCD0027AB23 /* Initial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Initial.swift; path = MeuJardim/Initial.swift; sourceTree = SOURCE_ROOT; };
+		D506D53124925FFD0027AB23 /* InitialView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = InitialView.storyboard; path = MeuJardim/InitialView.storyboard; sourceTree = SOURCE_ROOT; };
+		D506D535249269FF0027AB23 /* InitialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialCell.swift; path = MeuJardim/InitialCell.swift; sourceTree = SOURCE_ROOT; };
+		D55D14FC2493B3DA00DF5EB8 /* NewPlantView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = NewPlantView.storyboard; path = MeuJardim/NewPlantView.storyboard; sourceTree = SOURCE_ROOT; };
+		D55D14FE2493B73400DF5EB8 /* NewPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewPlant.swift; path = MeuJardim/NewPlant.swift; sourceTree = SOURCE_ROOT; };
 		D595A657249107D200846139 /* MeuJardim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeuJardim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D595A65A249107D200846139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D595A65C249107D200846139 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2033AC3A24A0E1CC00D38DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D595A654249107D200846139 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +102,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2033ABF82498F00E00D38DB8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				20A38CFD2492AA37001510A8 /* PageCell.swift */,
+				20A38CFB24926F2F001510A8 /* SwipingController.swift */,
+				20A38CFF2492BE0E001510A8 /* Page.swift */,
+				20A38D01249561C7001510A8 /* SwippingController+extension.swift */,
+				20A38D03249562BB001510A8 /* SwippingController+UICollectionView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2033AC3E24A0E1CC00D38DB8 /* MeuJardimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2033AC3F24A0E1CC00D38DB8 /* MeuJardimUITests.swift */,
+				2033AC4124A0E1CC00D38DB8 /* Info.plist */,
+				2033AC4B24A0E2AA00D38DB8 /* OnboardingUITests.swift */,
+			);
+			path = MeuJardimUITests;
+			sourceTree = "<group>";
+		};
 		D595A64E249107D200846139 = {
 			isa = PBXGroup;
 			children = (
 				D595A659249107D200846139 /* MeuJardim */,
 				D595A670249107D300846139 /* MeuJardimTests */,
+				2033AC3E24A0E1CC00D38DB8 /* MeuJardimUITests */,
 				D595A658249107D200846139 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +139,7 @@
 			children = (
 				D595A657249107D200846139 /* MeuJardim.app */,
 				D595A66D249107D300846139 /* MeuJardimTests.xctest */,
+				2033AC3D24A0E1CC00D38DB8 /* MeuJardimUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +156,7 @@
 				D595A663249107D300846139 /* Assets.xcassets */,
 				D595A665249107D300846139 /* LaunchScreen.storyboard */,
 				D595A668249107D300846139 /* Info.plist */,
+				2033ABF82498F00E00D38DB8 /* Onboarding */,
 			);
 			path = MeuJardim;
 			sourceTree = "<group>";
@@ -102,6 +173,7 @@
 		D595A67C249107D900846139 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +181,11 @@
 		D595A67D249107DF00846139 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1A067DA724911B11000E9D71 /* PlantRMController.swift */,
+				1A89392C2492683600131FFD /* ImagePicker.swift */,
+				D506D52F24925FCD0027AB23 /* Initial.swift */,
+				D506D535249269FF0027AB23 /* InitialCell.swift */,
+				D55D14FE2493B73400DF5EB8 /* NewPlant.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +193,8 @@
 		D595A67E249107E700846139 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D506D53124925FFD0027AB23 /* InitialView.storyboard */,
+				D55D14FC2493B3DA00DF5EB8 /* NewPlantView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +202,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2033AC3C24A0E1CC00D38DB8 /* MeuJardimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2033AC4624A0E1CC00D38DB8 /* Build configuration list for PBXNativeTarget "MeuJardimUITests" */;
+			buildPhases = (
+				2033AC3924A0E1CC00D38DB8 /* Sources */,
+				2033AC3A24A0E1CC00D38DB8 /* Frameworks */,
+				2033AC3B24A0E1CC00D38DB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2033AC4324A0E1CC00D38DB8 /* PBXTargetDependency */,
+			);
+			name = MeuJardimUITests;
+			productName = MeuJardimUITests;
+			productReference = 2033AC3D24A0E1CC00D38DB8 /* MeuJardimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		D595A656249107D200846139 /* MeuJardim */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D595A676249107D300846139 /* Build configuration list for PBXNativeTarget "MeuJardim" */;
@@ -168,6 +265,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Jhennyfer Rodrigues de Oliveira";
 				TargetAttributes = {
+					2033AC3C24A0E1CC00D38DB8 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = D595A656249107D200846139;
+					};
 					D595A656249107D200846139 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -192,17 +293,28 @@
 			targets = (
 				D595A656249107D200846139 /* MeuJardim */,
 				D595A66C249107D300846139 /* MeuJardimTests */,
+				2033AC3C24A0E1CC00D38DB8 /* MeuJardimUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2033AC3B24A0E1CC00D38DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D595A655249107D200846139 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D595A667249107D300846139 /* LaunchScreen.storyboard in Resources */,
+				1A067DA624911749000E9D71 /* PlantRegistrationManual.storyboard in Resources */,
 				D595A664249107D300846139 /* Assets.xcassets in Resources */,
+				D506D53224925FFD0027AB23 /* InitialView.storyboard in Resources */,
+				D55D14FD2493B3DA00DF5EB8 /* NewPlantView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,13 +328,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2033AC3924A0E1CC00D38DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2033AC4C24A0E2AA00D38DB8 /* OnboardingUITests.swift in Sources */,
+				2033AC4024A0E1CC00D38DB8 /* MeuJardimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D595A653249107D200846139 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55D14FF2493B73400DF5EB8 /* NewPlant.swift in Sources */,
+				1A89392F2492726E00131FFD /* ImagePicker.swift in Sources */,
+				1A89392E2492726900131FFD /* PlantRMController.swift in Sources */,
+				D506D536249269FF0027AB23 /* InitialCell.swift in Sources */,
 				D595A65F249107D200846139 /* ViewController.swift in Sources */,
+				20A38D04249562BB001510A8 /* SwippingController+UICollectionView.swift in Sources */,
+				20A38D02249561C7001510A8 /* SwippingController+extension.swift in Sources */,
+				20A38CFE2492AA37001510A8 /* PageCell.swift in Sources */,
+				20A38D002492BE0E001510A8 /* Page.swift in Sources */,
 				D595A65B249107D200846139 /* AppDelegate.swift in Sources */,
+				D506D53024925FCD0027AB23 /* Initial.swift in Sources */,
 				D595A65D249107D200846139 /* SceneDelegate.swift in Sources */,
+				20A38CFC24926F2F001510A8 /* SwipingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +368,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2033AC4324A0E1CC00D38DB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D595A656249107D200846139 /* MeuJardim */;
+			targetProxy = 2033AC4224A0E1CC00D38DB8 /* PBXContainerItemProxy */;
+		};
 		D595A66F249107D300846139 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D595A656249107D200846139 /* MeuJardim */;
@@ -256,6 +392,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2033AC4424A0E1CC00D38DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78HCYJFJ6W;
+				INFOPLIST_FILE = MeuJardimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ana-Karolina.MeuJardimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeuJardim;
+			};
+			name = Debug;
+		};
+		2033AC4524A0E1CC00D38DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78HCYJFJ6W;
+				INFOPLIST_FILE = MeuJardimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ana-Karolina.MeuJardimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeuJardim;
+			};
+			name = Release;
+		};
 		D595A674249107D300846139 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -449,6 +623,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2033AC4624A0E1CC00D38DB8 /* Build configuration list for PBXNativeTarget "MeuJardimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2033AC4424A0E1CC00D38DB8 /* Debug */,
+				2033AC4524A0E1CC00D38DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D595A652249107D200846139 /* Build configuration list for PBXProject "MeuJardim" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
