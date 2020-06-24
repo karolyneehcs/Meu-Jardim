@@ -21,13 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: winScene)
         
-        let navigationController = UINavigationController(rootViewController: ViewController())
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let swippingController = SwippingController(collectionViewLayout: layout)
-        
-        navigationController.pushViewController(swippingController, animated: true)
+        let navigationController = UINavigationController(rootViewController: swippingController)
         
         window?.rootViewController = navigationController
         
