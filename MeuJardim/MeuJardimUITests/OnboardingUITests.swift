@@ -19,7 +19,7 @@ class OnboardingUITests: XCTestCase {
         
         
         
-        let app = XCUIApplication()
+        _ = XCUIApplication()
         let prXimoButton = app.buttons["PRÓXIMO"]
         prXimoButton.tap()
         prXimoButton.tap()
