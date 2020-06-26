@@ -28,6 +28,11 @@
 		D595A664249107D300846139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D595A663249107D300846139 /* Assets.xcassets */; };
 		D595A667249107D300846139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D595A665249107D300846139 /* LaunchScreen.storyboard */; };
 		D595A672249107D300846139 /* MeuJardimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A671249107D300846139 /* MeuJardimTests.swift */; };
+		D5C2349D249971E80052C197 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C2349C249971E80052C197 /* Plant.swift */; };
+		D5C234A0249972740052C197 /* RepositoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C2349F249972740052C197 /* RepositoryItem.swift */; };
+		D5C234A22499728A0052C197 /* RepositoryPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C234A12499728A0052C197 /* RepositoryPlant.swift */; };
+		D5C234A4249972AA0052C197 /* RepositoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C234A3249972AA0052C197 /* RepositoryMethods.swift */; };
+		D5C234A7249974290052C197 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C234A6249974290052C197 /* FileHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,11 @@
 		D595A66D249107D300846139 /* MeuJardimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuJardimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D595A671249107D300846139 /* MeuJardimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuJardimTests.swift; sourceTree = "<group>"; };
 		D595A673249107D300846139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C2349C249971E80052C197 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Plant.swift; path = MeuJardim/Plant.swift; sourceTree = SOURCE_ROOT; };
+		D5C2349F249972740052C197 /* RepositoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryItem.swift; sourceTree = "<group>"; };
+		D5C234A12499728A0052C197 /* RepositoryPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPlant.swift; sourceTree = "<group>"; };
+		D5C234A3249972AA0052C197 /* RepositoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryMethods.swift; sourceTree = "<group>"; };
+		D5C234A6249974290052C197 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +157,8 @@
 		D595A659249107D200846139 /* MeuJardim */ = {
 			isa = PBXGroup;
 			children = (
+				D5C234A52499740B0052C197 /* FileHelper */,
+				D5C2349E249971FB0052C197 /* Repository */,
 				D595A67E249107E700846139 /* View */,
 				D595A67D249107DF00846139 /* Controller */,
 				D595A67C249107D900846139 /* Model */,
@@ -174,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */,
+				D5C2349C249971E80052C197 /* Plant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +210,24 @@
 				D55D14FC2493B3DA00DF5EB8 /* NewPlantView.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D5C2349E249971FB0052C197 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D5C2349F249972740052C197 /* RepositoryItem.swift */,
+				D5C234A12499728A0052C197 /* RepositoryPlant.swift */,
+				D5C234A3249972AA0052C197 /* RepositoryMethods.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D5C234A52499740B0052C197 /* FileHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D5C234A6249974290052C197 /* FileHelper.swift */,
+			);
+			path = FileHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,14 +377,19 @@
 				1A89392E2492726900131FFD /* PlantRMController.swift in Sources */,
 				D506D536249269FF0027AB23 /* InitialCell.swift in Sources */,
 				D595A65F249107D200846139 /* ViewController.swift in Sources */,
+				D5C234A7249974290052C197 /* FileHelper.swift in Sources */,
 				20A38D04249562BB001510A8 /* SwippingController+UICollectionView.swift in Sources */,
 				20A38D02249561C7001510A8 /* SwippingController+extension.swift in Sources */,
+				D5C234A0249972740052C197 /* RepositoryItem.swift in Sources */,
 				20A38CFE2492AA37001510A8 /* PageCell.swift in Sources */,
 				20A38D002492BE0E001510A8 /* Page.swift in Sources */,
+				D5C234A4249972AA0052C197 /* RepositoryMethods.swift in Sources */,
 				D595A65B249107D200846139 /* AppDelegate.swift in Sources */,
 				D506D53024925FCD0027AB23 /* Initial.swift in Sources */,
+				D5C2349D249971E80052C197 /* Plant.swift in Sources */,
 				D595A65D249107D200846139 /* SceneDelegate.swift in Sources */,
 				20A38CFC24926F2F001510A8 /* SwipingController.swift in Sources */,
+				D5C234A22499728A0052C197 /* RepositoryPlant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
