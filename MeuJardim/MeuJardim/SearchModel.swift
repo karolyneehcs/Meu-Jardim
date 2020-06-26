@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct Search: Encodable{
+    
+    var criteriaType : String
+    var textCriteria : [[String:String]]
+    var statusCriteria : [String]
+    var locationCriteria : [String]
+    var pagingOptions : [String:String]
+    var recordSubtypeCriteria : [String]
+    var modifiedSince : String
+    var speciesTaxonomyCriteria : [[String:String]]
+}
