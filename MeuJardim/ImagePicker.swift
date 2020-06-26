@@ -86,6 +86,12 @@ extension ImagePicker: UIImagePickerControllerDelegate, UINavigationControllerDe
         guard let image = info[.editedImage] as? UIImage else {
             return self.pickerController(picker, didSelect: nil)
         }
+        // get image url
+        let url = info[.imageURL]
+        let fileURL: URL = url as! URL
+        
+        // move image from temporary directory to a new directory
+        FileHelper().moveFileNewDirectory(at: fileURL, directoryNamed: "tempPhotos")
         self.pickerController(picker, didSelect: image)
     }
 }
