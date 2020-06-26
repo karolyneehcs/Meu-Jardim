@@ -12,16 +12,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-        /*
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+//         Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+//         If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+//         This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let winScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: winScene)
         
-        /*let layout = UICollectionViewFlowLayout()®
+        let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let swippingController = SwippingController(collectionViewLayout: layout)
         let navigationController = UINavigationController(rootViewController: swippingController)
@@ -29,12 +28,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window?.rootViewController = navigationController
         
-        /*let isFirstLaunch = (UserDefaults.standard.value(forKey: "FirstLaunch") as? Bool) ?? false
+       let isFirstLaunch = (UserDefaults.standard.value(forKey: "FirstLaunch") as? Bool) ?? false
         if !isFirstLaunch {
             UserDefaults.standard.set(true, forKey: "FirstLaunch")
             UserDefaults.standard.set(Date().timeIntervalSince1970, forKey: "FirstLaunchTimestamp")
             window?.rootViewController = swippingController
-        }*/
+        }
         
         window?.makeKeyAndVisible()
         
@@ -68,7 +67,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-    
-
-*/}
-
+}
