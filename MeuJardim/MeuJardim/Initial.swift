@@ -103,6 +103,10 @@ class Initial: UITableViewController {
            plants = plantRepository.readAllItems()
            tableView.reloadData()
        }
+    override func willMove(toParent parent: UIViewController?) {
+//        navigationItem.largeTitleDisplayMode = .always
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
     
     //MARK: - When user taps the plus button he will be redirect to another screen
     @objc func addTapped(_sender: UINavigationItem){
@@ -123,10 +127,10 @@ class Initial: UITableViewController {
     
     //MARK: - When user selects a row he will be redirected to another screen
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        let storyboard = UIStoryboard(name: "next", bundle: nil)
-        //         let vc = storyboard.instantiateViewController(withIdentifier: "nextCont") as UIViewController
-        //        self.navigationController?.pushViewController(vc, animated: true)
-        print("go to information screen")
+                let storyboard = UIStoryboard(name: "Info", bundle: nil)
+                 let vc = storyboard.instantiateViewController(withIdentifier: "Info") as UIViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+//        print("go to information screen")
     }
     
 }
