@@ -10,6 +10,15 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var generalCommentUser: UILabel!
+    @IBOutlet weak var generalComment: UILabel!
+    @IBOutlet weak var habitatCommentUser: UILabel!
+    @IBOutlet weak var habitatComment: UILabel!
+    @IBOutlet weak var scientificNameUser: UILabel!
+    @IBOutlet weak var scientificName: UILabel!
+    @IBOutlet weak var commonNameUser: UILabel!
+    @IBOutlet weak var commonName: UILabel!
+    @IBOutlet weak var plantImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
