@@ -49,6 +49,9 @@ class PlantRMController: UIViewController{
         plant.scientificName = scientificPlantField.text
         plantRepository.update(item: plant)
         
+        let api = NatureServe()
+        api.pesquisar(searchText: <#T##String#>)
+        
         // move the choosen photo to a permanent directory
         FileHelper().moveFileNewDirectory(at: FileHelper().constructPath(named: "tempPhotos" + "/" + (plant.photo ?? "")), directoryNamed: "photos")
         
