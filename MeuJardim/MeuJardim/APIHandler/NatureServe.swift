@@ -10,7 +10,7 @@ import Foundation
 
 class NatureServe{
     
-    func pesquisar(completion: @escaping ([[String:Any]]) -> Void, searchText : String) {
+    func pesquisar(searchText : String) {
         let path: String = "https://explorer.natureserve.org/api/data/speciesSearch"
         let url: URL = URL(string: path)!
         //Post
@@ -32,7 +32,15 @@ class NatureServe{
                 do{
                     if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:Any]{
                         if let results = json["results"] as? [[String :Any ]]{
-                            completion(results)
+                            
+                            for dict in results{
+                                for (key, value) in dict{
+                                    if key == "uniqueId"{
+                                        self.get(id: value as!String)
+                                    }
+                                }
+                                break
+                            }
                         }
                     }
                 }catch let error as NSError{
@@ -59,7 +67,7 @@ class NatureServe{
                     if let characteristics = json["speciesCharacteristics"] as? [String : Any]{
                         for (key, value) in characteristics{
                             if key == "habitatComments"{
-                                print(key, value)
+                                print(value)
                             }
                         }
                     }
@@ -71,17 +79,5 @@ class NatureServe{
             
         }.resume()
     }
-    
-    // Use structure
-    //    pesquisar() { results in
-    //        for dict in results{
-    //            for (key, value) in dict{
-    //                if key == "uniqueId"{
-    //                    get(id: value as!String)
-    //                }
-    //            }
-    //            break
-    //        }
-    //    }
     
 }
