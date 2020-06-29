@@ -16,9 +16,9 @@ class PageCell: UICollectionViewCell {
             
             guard let unwrappedPage = page else { return  }
             
-            let attributedText = NSMutableAttributedString(string: unwrappedPage.headerText, attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UIColor(red: 138/255, green: 38/255, blue: 5/255, alpha: 1)])
+            let attributedText = NSMutableAttributedString(string: unwrappedPage.headerText, attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 20), NSAttributedString.Key.foregroundColor: UIColor(red: 138/255, green: 38/255, blue: 5/255, alpha: 1)])
             
-            attributedText.append(NSAttributedString(string: "\n\n\n\(unwrappedPage.bodyText)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14, weight: .light), NSAttributedString.Key.foregroundColor: UIColor(red: 138/255, green: 38/255, blue: 5/255, alpha: 1)]))
+            attributedText.append(NSAttributedString(string: "\n\n\n\(unwrappedPage.bodyText)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .light), NSAttributedString.Key.foregroundColor: UIColor(red: 138/255, green: 38/255, blue: 5/255, alpha: 1)]))
             
             profileImageView.image = UIImage(named: unwrappedPage.imageName)
             
@@ -43,9 +43,9 @@ class PageCell: UICollectionViewCell {
      private let descriptionTextView: UITextView = {
         let textView = UITextView()
         
-        let attributedText = NSMutableAttributedString(string: "Vamos te ajudar a cuidar das suas plantas!", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UIColor(red: 138/255, green: 38/255, blue: 5/255, alpha: 1)])
+        let attributedText = NSMutableAttributedString(string: "Vamos te ajudar a cuidar das suas plantas!", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 23), NSAttributedString.Key.foregroundColor: UIColor(red: 138/255, green: 38/255, blue: 5/255, alpha: 1)])
         
-        attributedText.append(NSAttributedString(string: "\n\n\nTemos dicas desde materiais para regar até manter suas preciosas longe de pragas.", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14, weight: .light), NSAttributedString.Key.foregroundColor: UIColor(red: 138/255, green: 38/255, blue: 5/255, alpha: 1)]))
+        attributedText.append(NSAttributedString(string: "\n\n\nTemos dicas desde materiais para regar até manter suas preciosas longe de pragas.", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 20, weight: .light), NSAttributedString.Key.foregroundColor: UIColor(red: 138/255, green: 38/255, blue: 5/255, alpha: 1)]))
         
         textView.attributedText = attributedText
     
