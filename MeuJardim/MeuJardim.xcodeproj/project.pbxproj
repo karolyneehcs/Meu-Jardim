@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		00DF195E249BAEFE00BC60D2 /* TelaCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF195D249BAEFE00BC60D2 /* TelaCards.swift */; };
 		00DF197524A0A6DF00BC60D2 /* TelaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF197424A0A6DF00BC60D2 /* TelaInfo.swift */; };
 		00DF197B24A0E2CE00BC60D2 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DF197A24A0E2CE00BC60D2 /* Info.storyboard */; };
@@ -16,7 +15,6 @@
 		1A89392F2492726E00131FFD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A89392C2492683600131FFD /* ImagePicker.swift */; };
 		2033AC4024A0E1CC00D38DB8 /* MeuJardimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033AC3F24A0E1CC00D38DB8 /* MeuJardimUITests.swift */; };
 		2033AC4C24A0E2AA00D38DB8 /* OnboardingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033AC4B24A0E2AA00D38DB8 /* OnboardingUITests.swift */; };
-
 		20A38CFC24926F2F001510A8 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38CFB24926F2F001510A8 /* SwipingController.swift */; };
 		20A38CFE2492AA37001510A8 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38CFD2492AA37001510A8 /* PageCell.swift */; };
 		20A38D002492BE0E001510A8 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A38CFF2492BE0E001510A8 /* Page.swift */; };
@@ -25,8 +23,12 @@
 		D506D53024925FCD0027AB23 /* Initial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D506D52F24925FCD0027AB23 /* Initial.swift */; };
 		D506D53224925FFD0027AB23 /* InitialView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D506D53124925FFD0027AB23 /* InitialView.storyboard */; };
 		D506D536249269FF0027AB23 /* InitialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D506D535249269FF0027AB23 /* InitialCell.swift */; };
+		D52E3B8824A63C92002F050E /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E3B8724A63C92002F050E /* SearchModel.swift */; };
+		D52E3B8C24A63CD7002F050E /* PlantCharacteristicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E3B8B24A63CD7002F050E /* PlantCharacteristicModel.swift */; };
+		D52E3B8F24A63E03002F050E /* NatureServe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E3B8E24A63E03002F050E /* NatureServe.swift */; };
 		D55D14FD2493B3DA00DF5EB8 /* NewPlantView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55D14FC2493B3DA00DF5EB8 /* NewPlantView.storyboard */; };
 		D55D14FF2493B73400DF5EB8 /* NewPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D14FE2493B73400DF5EB8 /* NewPlant.swift */; };
+		D566082B24A76D0E00233C31 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566082A24A76D0E00233C31 /* InfoViewController.swift */; };
 		D595A65B249107D200846139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A65A249107D200846139 /* AppDelegate.swift */; };
 		D595A65D249107D200846139 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A65C249107D200846139 /* SceneDelegate.swift */; };
 		D595A65F249107D200846139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595A65E249107D200846139 /* ViewController.swift */; };
@@ -58,7 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-
 		00DF195D249BAEFE00BC60D2 /* TelaCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCards.swift; sourceTree = SOURCE_ROOT; };
 		00DF197424A0A6DF00BC60D2 /* TelaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInfo.swift; sourceTree = SOURCE_ROOT; };
 		00DF197A24A0E2CE00BC60D2 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = SOURCE_ROOT; };
@@ -77,8 +78,12 @@
 		D506D52F24925FCD0027AB23 /* Initial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Initial.swift; path = MeuJardim/Initial.swift; sourceTree = SOURCE_ROOT; };
 		D506D53124925FFD0027AB23 /* InitialView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = InitialView.storyboard; path = MeuJardim/InitialView.storyboard; sourceTree = SOURCE_ROOT; };
 		D506D535249269FF0027AB23 /* InitialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialCell.swift; path = MeuJardim/InitialCell.swift; sourceTree = SOURCE_ROOT; };
+		D52E3B8724A63C92002F050E /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchModel.swift; path = MeuJardim/SearchModel.swift; sourceTree = SOURCE_ROOT; };
+		D52E3B8B24A63CD7002F050E /* PlantCharacteristicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlantCharacteristicModel.swift; path = MeuJardim/PlantCharacteristicModel.swift; sourceTree = SOURCE_ROOT; };
+		D52E3B8E24A63E03002F050E /* NatureServe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureServe.swift; sourceTree = "<group>"; };
 		D55D14FC2493B3DA00DF5EB8 /* NewPlantView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = NewPlantView.storyboard; path = MeuJardim/NewPlantView.storyboard; sourceTree = SOURCE_ROOT; };
 		D55D14FE2493B73400DF5EB8 /* NewPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewPlant.swift; path = MeuJardim/NewPlant.swift; sourceTree = SOURCE_ROOT; };
+		D566082A24A76D0E00233C31 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = MeuJardim/InfoViewController.swift; sourceTree = SOURCE_ROOT; };
 		D595A657249107D200846139 /* MeuJardim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeuJardim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D595A65A249107D200846139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D595A65C249107D200846139 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +148,14 @@
 			path = MeuJardimUITests;
 			sourceTree = "<group>";
 		};
+		D52E3B8D24A63D64002F050E /* APIHandler */ = {
+			isa = PBXGroup;
+			children = (
+				D52E3B8E24A63E03002F050E /* NatureServe.swift */,
+			);
+			path = APIHandler;
+			sourceTree = "<group>";
+		};
 		D595A64E249107D200846139 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +179,7 @@
 		D595A659249107D200846139 /* MeuJardim */ = {
 			isa = PBXGroup;
 			children = (
+				D52E3B8D24A63D64002F050E /* APIHandler */,
 				D5C234A52499740B0052C197 /* FileHelper */,
 				D5C2349E249971FB0052C197 /* Repository */,
 				D595A67E249107E700846139 /* View */,
@@ -196,6 +210,8 @@
 			children = (
 				1A067DA524911749000E9D71 /* PlantRegistrationManual.storyboard */,
 				D5C2349C249971E80052C197 /* Plant.swift */,
+				D52E3B8724A63C92002F050E /* SearchModel.swift */,
+				D52E3B8B24A63CD7002F050E /* PlantCharacteristicModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +224,7 @@
 				D506D52F24925FCD0027AB23 /* Initial.swift */,
 				D506D535249269FF0027AB23 /* InitialCell.swift */,
 				D55D14FE2493B73400DF5EB8 /* NewPlant.swift */,
+				D566082A24A76D0E00233C31 /* InfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -385,18 +402,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52E3B8C24A63CD7002F050E /* PlantCharacteristicModel.swift in Sources */,
 				D55D14FF2493B73400DF5EB8 /* NewPlant.swift in Sources */,
 				1A89392F2492726E00131FFD /* ImagePicker.swift in Sources */,
 				1A89392E2492726900131FFD /* PlantRMController.swift in Sources */,
 				D506D536249269FF0027AB23 /* InitialCell.swift in Sources */,
 				D595A65F249107D200846139 /* ViewController.swift in Sources */,
+				D52E3B8F24A63E03002F050E /* NatureServe.swift in Sources */,
 				D5C234A7249974290052C197 /* FileHelper.swift in Sources */,
 				20A38D04249562BB001510A8 /* SwippingController+UICollectionView.swift in Sources */,
 				20A38D02249561C7001510A8 /* SwippingController+extension.swift in Sources */,
 				D5C234A0249972740052C197 /* RepositoryItem.swift in Sources */,
 				20A38CFE2492AA37001510A8 /* PageCell.swift in Sources */,
 				20A38D002492BE0E001510A8 /* Page.swift in Sources */,
-
 				00DF197524A0A6DF00BC60D2 /* TelaInfo.swift in Sources */,
 				00DF195E249BAEFE00BC60D2 /* TelaCards.swift in Sources */,
 				D5C234A4249972AA0052C197 /* RepositoryMethods.swift in Sources */,
@@ -404,7 +422,9 @@
 				D506D53024925FCD0027AB23 /* Initial.swift in Sources */,
 				D5C2349D249971E80052C197 /* Plant.swift in Sources */,
 				D595A65D249107D200846139 /* SceneDelegate.swift in Sources */,
+				D52E3B8824A63C92002F050E /* SearchModel.swift in Sources */,
 				20A38CFC24926F2F001510A8 /* SwipingController.swift in Sources */,
+				D566082B24A76D0E00233C31 /* InfoViewController.swift in Sources */,
 				D5C234A22499728A0052C197 /* RepositoryPlant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

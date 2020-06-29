@@ -12,9 +12,9 @@ class SwippingController: UICollectionViewController, UICollectionViewDelegateFl
     
     
     let pages = [
-        Page(imageName: "onboarding1", headerText: "Vamos te ajudar a cuidar das suas plantas!", bodyText: "Te fornecemos todas as informações para suas plantinhas"),
-        Page(imageName: "onboarding2", headerText: "Você pode identificar sua plantinha", bodyText: "temos uma aba de reconhecimento de imagens, então identificar sua plantinha não vai ser um problema"),
-        Page(imageName: "onboarding3", headerText: "Tornamos a experiência de jardinagem melhor", bodyText: "Aqui voce pode inserir suas plantas e monitorá-las de acordo com suas características")
+        Page(imageName: "onboarding1", headerText: "We're going to help you take care of your plants!", bodyText: "We offer you information about your plants"),
+//        Page(imageName: "onboarding2", headerText: "You can'", bodyText: "temos uma aba de reconhecimento de imagens, então identificar sua plantinha não vai ser um problema"),
+        Page(imageName: "onboarding2", headerText: "We make your gardening experience better", bodyText: "You can register your plant and check the best environment for its growth")
     ]
     
     let previousButton: UIButton = {
@@ -30,7 +30,6 @@ class SwippingController: UICollectionViewController, UICollectionViewDelegateFl
     }()
     
     @objc private func handlePrev() {
-        print("Trying to previous")
         
         let lastIndex = max(pageControl.currentPage - 1, 0)
         
@@ -51,8 +50,6 @@ class SwippingController: UICollectionViewController, UICollectionViewDelegateFl
     }()
     
     @objc private func handleNext() {
-        print("trying to advance to next")
-        
         let nextIndex = min(pageControl.currentPage + 1, pages.count - 1)
         
         if pageControl.currentPage == pages.count-1{
