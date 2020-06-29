@@ -15,11 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Common Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-B1-Nmm">
-                                <rect key="frame" x="16" y="340" width="176" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Common Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-B1-Nmm">
+                                <rect key="frame" x="16" y="340" width="254" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="097-gm-Taa"/>
-                                    <constraint firstAttribute="width" constant="109" id="QUx-37-TSj"/>
+                                    <constraint firstAttribute="width" constant="254" id="QUx-37-TSj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -72,8 +72,8 @@
                                     <constraint firstAttribute="height" constant="190" id="0bd-Lk-dF1"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRe-iT-NLc">
-                                <rect key="frame" x="122" y="143" width="131" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRe-iT-NLc">
+                                <rect key="frame" x="122" y="270" width="131" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8wV-yX-bcf"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="FGW-lL-q0F"/>
@@ -90,7 +90,7 @@
                             <constraint firstItem="dQe-lp-QJ4" firstAttribute="top" secondItem="RLM-W1-cvC" secondAttribute="top" id="2cf-gp-Wks"/>
                             <constraint firstItem="8hg-B1-Nmm" firstAttribute="leading" secondItem="RLM-W1-cvC" secondAttribute="leading" constant="16" id="9fe-x6-MQF"/>
                             <constraint firstItem="sLr-XC-AI3" firstAttribute="leading" secondItem="RLM-W1-cvC" secondAttribute="leading" constant="16" id="9hZ-uT-fJ5"/>
-                            <constraint firstItem="RLM-W1-cvC" firstAttribute="trailing" secondItem="8hg-B1-Nmm" secondAttribute="trailing" constant="250" id="OHO-r7-XVZ"/>
+                            <constraint firstItem="RLM-W1-cvC" firstAttribute="trailing" secondItem="8hg-B1-Nmm" secondAttribute="trailing" constant="105" id="OHO-r7-XVZ"/>
                             <constraint firstItem="RLM-W1-cvC" firstAttribute="bottom" secondItem="sLr-XC-AI3" secondAttribute="bottom" constant="146" id="Rrb-Ar-PK8"/>
                             <constraint firstItem="riH-Ip-8L3" firstAttribute="top" secondItem="Fcc-8b-cBi" secondAttribute="bottom" constant="40.5" id="SBO-Lf-q34"/>
                             <constraint firstItem="dQe-lp-QJ4" firstAttribute="leading" secondItem="RLM-W1-cvC" secondAttribute="leading" id="TCj-Cb-705"/>
