@@ -10,7 +10,7 @@ import Foundation
 
 class NatureServe{
     
-    func pesquisar(searchText : String) {
+    func pesquisar(searchText : String, completion: @escaping ([[String:Any]]) -> Void) {
         let path: String = "https://explorer.natureserve.org/api/data/speciesSearch"
         let url: URL = URL(string: path)!
         //Post
@@ -32,15 +32,9 @@ class NatureServe{
                 do{
                     if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:Any]{
                         if let results = json["results"] as? [[String :Any ]]{
+                            completion(results)
                             
-                            for dict in results{
-                                for (key, value) in dict{
-                                    if key == "uniqueId"{
-                                        self.get(id: value as!String)
-                                    }
-                                }
-                                break
-                            }
+                            
                         }
                     }
                 }catch let error as NSError{
@@ -50,7 +44,7 @@ class NatureServe{
         }
     }
     
-    func get(id: String) {
+    func get(id: String, completionGet: @escaping ([String:Any]) -> Void) {
         let path: String =  "https://explorer.natureserve.org/api/data/taxon/"  + id
         let url: URL = URL(string: path)!
         
@@ -65,11 +59,7 @@ class NatureServe{
             do{
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]{
                     if let characteristics = json["speciesCharacteristics"] as? [String : Any]{
-                        for (key, value) in characteristics{
-                            if key == "habitatComments"{
-                                print(value)
-                            }
-                        }
+                        completionGet(characteristics)
                     }
                     
                 }
@@ -81,3 +71,6 @@ class NatureServe{
     }
     
 }
+
+
+
