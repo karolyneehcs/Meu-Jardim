@@ -19,10 +19,35 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var commonNameUser: UILabel!
     @IBOutlet weak var commonName: UILabel!
     @IBOutlet weak var plantImage: UIImageView!
+    
+    
+    var plantImageInit = ""
+    var generalCommentUserInit = ""
+    var habitatCommentUserInit = ""
+    var scientificNameUserInit = ""
+    var commonNameUserInit = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.largeTitleDisplayMode = .never
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationItem.title = "Information"
+        generalComment.text = "General Comments"
+        habitatComment.text = "Habitat Comments"
+        commonName.text = "Common Name"
+        scientificName.text = "Scientific Name"
+        let imagePath = FileHelper().constructPath(named: "photos/" + (plantImageInit))
+        plantImage.image = UIImage(contentsOfFile: imagePath.relativePath)
+        generalCommentUser.text = generalCommentUserInit
+        habitatCommentUser.text = habitatCommentUserInit
+        scientificNameUser.text = scientificNameUserInit
+        commonNameUser.text = commonNameUserInit
+        
         // Do any additional setup after loading the view.
+    }
+    override func willMove(toParent parent: UIViewController?) {
+         navigationItem.largeTitleDisplayMode = .always
+         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
 

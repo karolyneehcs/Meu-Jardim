@@ -35,7 +35,7 @@ class Initial: UITableViewController {
     var isFiltering: Bool {
         return searchController.isActive && !isSearchBarEmpty
     }
- 
+    
     //MARK: - Table View Datasource
     //MARK: - Define the number of sections
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -98,13 +98,13 @@ class Initial: UITableViewController {
     
     //MARK: - Update table view
     override func viewWillAppear(_ animated: Bool) {
-           super.viewWillAppear(animated)
-           // Calling the repository to read all notes
-           plants = plantRepository.readAllItems()
-           tableView.reloadData()
-       }
+        super.viewWillAppear(animated)
+        // Calling the repository to read all notes
+        plants = plantRepository.readAllItems()
+        tableView.reloadData()
+    }
     override func willMove(toParent parent: UIViewController?) {
-//        navigationItem.largeTitleDisplayMode = .always
+        navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = false
     }
     
@@ -127,10 +127,17 @@ class Initial: UITableViewController {
     
     //MARK: - When user selects a row he will be redirected to another screen
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                let storyboard = UIStoryboard(name: "Info", bundle: nil)
-                 let vc = storyboard.instantiateViewController(withIdentifier: "Info") as UIViewController
-                self.navigationController?.pushViewController(vc, animated: true)
-//        print("go to information screen")
+        plants = plantRepository.readAllItems()
+        let selectedPlant = plants[indexPath.row]
+        let storyboard = UIStoryboard(name: "Info", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Info") as? InfoViewController
+        vc?.commonNameUserInit = selectedPlant.popularName ?? ""
+        vc?.plantImageInit = selectedPlant.photo ?? ""
+        vc?.generalCommentUserInit = selectedPlant.generalComments ?? ""
+        vc?.habitatCommentUserInit = selectedPlant.habitatComments ?? ""
+        vc?.scientificNameUserInit = selectedPlant.scientificName ?? ""
+        
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
 }

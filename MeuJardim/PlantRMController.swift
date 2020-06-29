@@ -39,7 +39,7 @@ class PlantRMController: UIViewController{
     
     //MARK: - Saves the new plant in a file
     @objc func saveTapped(_sender: UINavigationItem){
-  
+        var searchText: String = ""
         let plantRepository = PlantRepository()
         let plant = plantRepository.createNewItem() ?? Plant()
         // get contents of tempPhoto which is a directory where the photo is
@@ -47,13 +47,58 @@ class PlantRMController: UIViewController{
         plant.photo = contents.first
         plant.popularName = popularPlantField.text
         plant.scientificName = scientificPlantField.text
-        plantRepository.update(item: plant)
         
-        let api = NatureServe()
-        api.pesquisar(searchText: <#T##String#>)
+        if scientificPlantField.text != "" && scientificPlantField != nil{
+            searchText = searchText + (plant.scientificName!)
+        }else{
+            searchText = searchText + (plant.popularName!)
+        }
         
-        // move the choosen photo to a permanent directory
+        
         FileHelper().moveFileNewDirectory(at: FileHelper().constructPath(named: "tempPhotos" + "/" + (plant.photo ?? "")), directoryNamed: "photos")
+        let api = NatureServe()
+        // this function needs to be reorganized is too long
+        api.pesquisar(searchText: searchText, completion:{ results in
+            for dict in results{
+                for (key, value) in dict{
+                    if key == "scientificName"{
+                        plant.scientificName = value as? String
+                        plantRepository.update(item: plant)
+                    }
+                    if key == "uniqueId"{
+                        api.get(id: value as!String, completionGet: {characteristics in
+                            for (key, value) in characteristics{
+                                if key == "habitatComments"{
+                                    if value as? String == nil{
+                                        plant.habitatComments = "Sorry, we  don't have this information yet."
+                                        plantRepository.update(item: plant)
+                                    } else{
+                                        plant.habitatComments = value as? String
+                                        plantRepository.update(item: plant)
+                                    }
+                                }
+                                if key == "generalDescription"{
+                                    if value as? String == nil{
+                                        plant.generalComments = "Sorry, we don't have this information yet."
+                                        plantRepository.update(item: plant)
+                                    } else{
+                                        plant.generalComments = value as? String
+                                        plantRepository.update(item: plant)
+                                    }
+                                    
+                                }
+                            }
+                            
+                        })
+                    }
+                    
+                }
+                break
+            }
+        })
+        plantRepository.update(item: plant)
+        // move the choosen photo to a permanent directory
+        
         
         // go back to table previous screen
         let storyboard = UIStoryboard(name: "InitialView", bundle: nil)
@@ -92,7 +137,7 @@ extension PlantRMController{
         navigationItem.rightBarButtonItem =
             UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveTapped))
         navigationController?.navigationBar.prefersLargeTitles = false
-        navigationItem.title = "Cadastrar nova planta"
+        navigationItem.title = "Register splant"
         
     }
     func setKeyboardBehavior(){
