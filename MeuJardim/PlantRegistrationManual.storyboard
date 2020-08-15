@@ -15,17 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-B1-Nmm">
-                                <rect key="frame" x="16" y="340" width="109" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Common Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-B1-Nmm">
+                                <rect key="frame" x="16" y="340" width="254" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="097-gm-Taa"/>
-                                    <constraint firstAttribute="width" constant="109" id="QUx-37-TSj"/>
+                                    <constraint firstAttribute="width" constant="254" id="QUx-37-TSj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Cientifico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riH-Ip-8L3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scientific Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riH-Ip-8L3">
                                 <rect key="frame" x="16" y="451.5" width="123" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123" id="1dW-re-t8u"/>
@@ -64,23 +64,22 @@
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dQe-lp-QJ4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gs-eM-tuX">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="375" id="Wg0-wJ-zgO"/>
-                                            <constraint firstAttribute="height" constant="190" id="r11-Kv-jrG"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9gs-eM-tuX">
+                                <rect key="frame" x="0.0" y="63" width="375" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="0bd-Lk-dF1"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRe-iT-NLc">
-                                <rect key="frame" x="122" y="198" width="131" height="30"/>
+                                <rect key="frame" x="122" y="270" width="131" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8wV-yX-bcf"/>
-                                    <constraint firstAttribute="width" constant="131" id="TCg-ZW-CXC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="FGW-lL-q0F"/>
+                                    <constraint firstAttribute="width" constant="131" id="e2B-ol-Zry"/>
                                 </constraints>
-                                <state key="normal" title="Show Image Picker"/>
+                                <state key="normal" title="Choose a picture"/>
                                 <connections>
                                     <action selector="showImagePicker:" destination="otx-cH-b34" eventType="touchUpInside" id="BEL-L2-qNw"/>
                                 </connections>
@@ -88,25 +87,24 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="RLM-W1-cvC" firstAttribute="trailing" secondItem="rRe-iT-NLc" secondAttribute="trailing" constant="122" id="97c-vb-sD1"/>
+                            <constraint firstItem="dQe-lp-QJ4" firstAttribute="top" secondItem="RLM-W1-cvC" secondAttribute="top" id="2cf-gp-Wks"/>
                             <constraint firstItem="8hg-B1-Nmm" firstAttribute="leading" secondItem="RLM-W1-cvC" secondAttribute="leading" constant="16" id="9fe-x6-MQF"/>
                             <constraint firstItem="sLr-XC-AI3" firstAttribute="leading" secondItem="RLM-W1-cvC" secondAttribute="leading" constant="16" id="9hZ-uT-fJ5"/>
-                            <constraint firstItem="rRe-iT-NLc" firstAttribute="top" secondItem="dQe-lp-QJ4" secondAttribute="bottom" constant="8" id="Nm9-aQ-wHA"/>
-                            <constraint firstItem="RLM-W1-cvC" firstAttribute="trailing" secondItem="8hg-B1-Nmm" secondAttribute="trailing" constant="250" id="OHO-r7-XVZ"/>
-                            <constraint firstItem="rRe-iT-NLc" firstAttribute="top" secondItem="dQe-lp-QJ4" secondAttribute="bottom" constant="8" id="QoC-b5-add"/>
+                            <constraint firstItem="RLM-W1-cvC" firstAttribute="trailing" secondItem="8hg-B1-Nmm" secondAttribute="trailing" constant="105" id="OHO-r7-XVZ"/>
                             <constraint firstItem="RLM-W1-cvC" firstAttribute="bottom" secondItem="sLr-XC-AI3" secondAttribute="bottom" constant="146" id="Rrb-Ar-PK8"/>
                             <constraint firstItem="riH-Ip-8L3" firstAttribute="top" secondItem="Fcc-8b-cBi" secondAttribute="bottom" constant="40.5" id="SBO-Lf-q34"/>
+                            <constraint firstItem="dQe-lp-QJ4" firstAttribute="leading" secondItem="RLM-W1-cvC" secondAttribute="leading" id="TCj-Cb-705"/>
                             <constraint firstItem="RLM-W1-cvC" firstAttribute="trailing" secondItem="riH-Ip-8L3" secondAttribute="trailing" constant="236" id="WvD-7g-XuE"/>
                             <constraint firstItem="riH-Ip-8L3" firstAttribute="leading" secondItem="RLM-W1-cvC" secondAttribute="leading" constant="16" id="XZE-oH-cGM"/>
+                            <constraint firstItem="Fcc-8b-cBi" firstAttribute="top" secondItem="rRe-iT-NLc" secondAttribute="bottom" constant="77" id="b0j-8b-gLq"/>
+                            <constraint firstItem="RLM-W1-cvC" firstAttribute="trailing" secondItem="rRe-iT-NLc" secondAttribute="trailing" constant="122" id="bZz-7c-1RQ"/>
                             <constraint firstItem="rRe-iT-NLc" firstAttribute="leading" secondItem="RLM-W1-cvC" secondAttribute="leading" constant="122" id="c6s-QW-0H4"/>
                             <constraint firstItem="dQe-lp-QJ4" firstAttribute="centerX" secondItem="Fcc-8b-cBi" secondAttribute="centerX" id="hCg-bu-Yh2"/>
                             <constraint firstItem="RLM-W1-cvC" firstAttribute="trailing" secondItem="Fcc-8b-cBi" secondAttribute="trailing" constant="16" id="iPI-D7-dc6"/>
                             <constraint firstItem="Fcc-8b-cBi" firstAttribute="top" secondItem="8hg-B1-Nmm" secondAttribute="bottom" constant="16.5" id="oPX-RJ-2AZ"/>
                             <constraint firstItem="Fcc-8b-cBi" firstAttribute="leading" secondItem="RLM-W1-cvC" secondAttribute="leading" constant="16" id="oq0-1x-bwH"/>
-                            <constraint firstItem="rRe-iT-NLc" firstAttribute="top" secondItem="dQe-lp-QJ4" secondAttribute="bottom" constant="8" id="tCk-Tf-MMD"/>
                             <constraint firstItem="sLr-XC-AI3" firstAttribute="top" secondItem="riH-Ip-8L3" secondAttribute="bottom" constant="15" id="uM8-JC-uNh"/>
                             <constraint firstItem="8hg-B1-Nmm" firstAttribute="top" secondItem="dQe-lp-QJ4" secondAttribute="bottom" constant="150" id="uUh-d4-nAx"/>
-                            <constraint firstItem="dQe-lp-QJ4" firstAttribute="centerX" secondItem="rRe-iT-NLc" secondAttribute="centerX" id="yUG-RA-SgR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RLM-W1-cvC"/>
                         <variation key="default">
